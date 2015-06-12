@@ -1,6 +1,8 @@
 """
 The Calculator class is a simple implementation of a calculator
 containing several generic math functions
+
+version 1.0
 """
 
 
