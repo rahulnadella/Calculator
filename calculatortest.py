@@ -104,6 +104,20 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(-64, self.calculator.cubed(-4))
         self.assertEqual(-1000, self.calculator.cubed(-10))
 
+    def test_power_identity(self):
+        self.assertEqual(1, self.calculator.power(1, 4))
+        self.assertEqual(4, self.calculator.power(2, 2))
+        self.assertEqual(27, self.calculator.power(3, 3))
+        self.assertEqual(256, self.calculator.power(4, 4))
+        self.assertEqual(3125, self.calculator.power(5, 5))
+
+    def test_power_of_negatives(self):
+        self.assertEqual(-1, self.calculator.power(-1, 1))
+        self.assertEqual(4, self.calculator.power(-2, 2))
+        self.assertEqual(-27, self.calculator.power(-3, 3))
+        self.assertEqual(256, self.calculator.power(-4, 4))
+        self.assertEqual(-3125, self.calculator.power(-5, 5))
+
     def test_sqrt_identity(self):
         self.assertEqual(0, self.calculator.sqrt(0))
         self.assertEqual(1, self.calculator.sqrt(1))
