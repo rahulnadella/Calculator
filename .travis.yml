@@ -9,7 +9,7 @@ python:
   - "3.4"
 
 # command to install dependencies
-script: python calculatortest.py
+script: python3 calculatortest.py
 branches:
   only:
     - master
