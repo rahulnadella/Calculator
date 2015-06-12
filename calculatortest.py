@@ -104,6 +104,21 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(-64, self.calculator.cubed(-4))
         self.assertEqual(-1000, self.calculator.cubed(-10))
 
+    def test_sqrt_identity(self):
+        self.assertEqual(0, self.calculator.sqrt(0))
+        self.assertEqual(1, self.calculator.sqrt(1))
+        self.assertEqual(2, self.calculator.sqrt(4))
+        self.assertEqual(3, self.calculator.sqrt(9))
+        self.assertEqual(4, self.calculator.sqrt(16))
+        self.assertEqual(5, self.calculator.sqrt(25))
+        self.assertEqual(10, self.calculator.sqrt(100))
+
+    def test_sqrt_of_negatives(self):
+        self.assertEqual(1.2246467991473532e-16+2j, self.calculator.sqrt(-4))
+        self.assertEqual(1.8369701987210297e-16+3j, self.calculator.sqrt(-9))
+        self.assertEqual(2.4492935982947064e-16+4j, self.calculator.sqrt(-16))
+        self.assertEqual(3.061616997868383e-16+5j, self.calculator.sqrt(-25))
+        self.assertEqual(6.123233995736766e-16+10j, self.calculator.sqrt(-100))
 
 if __name__ == '__main__':
     unittest.main()

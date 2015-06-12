@@ -23,3 +23,6 @@ class Calculator(object):
 
     def cubed(self, a):
         return a ** 3
+
+    def sqrt(self, a):
+        return (a**0.5)
