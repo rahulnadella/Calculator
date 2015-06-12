@@ -20,4 +20,6 @@ class Calculator(object):
 
     def squared(self, a):
         return a ** 2
-    
+
+    def cubed(self, a):
+        return a ** 3

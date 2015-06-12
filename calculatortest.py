@@ -89,5 +89,21 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(25, self.calculator.squared(-5))
         self.assertEqual(100, self.calculator.squared(-10))
 
+    def test_cubed_identity(self):
+        self.assertEqual(0, self.calculator.cubed(0))
+        self.assertEqual(1, self.calculator.cubed(1))
+        self.assertEqual(8, self.calculator.cubed(2))
+        self.assertEqual(27, self.calculator.cubed(3))
+        self.assertEqual(64, self.calculator.cubed(4))
+        self.assertEqual(1000, self.calculator.cubed(10))
+
+    def test_cubed_of_negatives(self):
+        self.assertEqual(-1, self.calculator.cubed(-1))
+        self.assertEqual(-8, self.calculator.cubed(-2))
+        self.assertEqual(-27, self.calculator.cubed(-3))
+        self.assertEqual(-64, self.calculator.cubed(-4))
+        self.assertEqual(-1000, self.calculator.cubed(-10))
+
+
 if __name__ == '__main__':
     unittest.main()
