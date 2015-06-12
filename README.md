@@ -1,4 +1,4 @@
-# Calculator
+# Calculator [![MIT License][license-image]][license-url]
 
 A simple implementation of the calculator (mainly used to start learning python). The Calculator class contains the following methods -> *add, subtract, multiply, divide, modulus, squared, cubed, power, sqrt, root, and abs*.
 
@@ -26,3 +26,6 @@ calculator.abs(-2) -> 2
 ###License
 
 *MIT License* --> A short, permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.  There are many variations of this license in use.
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
