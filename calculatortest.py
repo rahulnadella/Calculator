@@ -63,7 +63,7 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(-0.25, self.calculator.divide(-1, 4))
         self.assertEqual(2.5, self.calculator.divide(-5, -2))
 
-    def test_modulus_of_identity(self):
+    def test_modulus_identity(self):
         self.assertEqual(0, self.calculator.modulus(0, 2))
         self.assertEqual(1, self.calculator.modulus(3, 2))
         self.assertEqual(2, self.calculator.modulus(2, 3))
@@ -74,7 +74,20 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(1, self.calculator.modulus(-7, 2))
         self.assertEqual(-5, self.calculator.modulus(2, -7))
         self.assertEqual(-1, self.calculator.modulus(-5, -2))
-        self.assertEquals(-2, self.calculator.modulus(-2, -5))
+        self.assertEqual(-2, self.calculator.modulus(-2, -5))
+
+    def test_squared_identity(self):
+        self.assertEqual(0, self.calculator.squared(0))
+        self.assertEqual(4, self.calculator.squared(2))
+        self.assertEqual(9, self.calculator.squared(3))
+        self.assertEqual(25, self.calculator.squared(5))
+        self.assertEqual(100, self.calculator.squared(10))
+
+    def test_squared_of_negatives(self):
+        self.assertEqual(4, self.calculator.squared(-2))
+        self.assertEqual(9, self.calculator.squared(-3))
+        self.assertEqual(25, self.calculator.squared(-5))
+        self.assertEqual(100, self.calculator.squared(-10))
 
 if __name__ == '__main__':
     unittest.main()

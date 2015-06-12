@@ -1,3 +1,6 @@
+"""
+
+"""
 class Calculator(object):
 
     def add(self, a, b):
@@ -14,3 +17,7 @@ class Calculator(object):
 
     def modulus(self, a, b):
         return a % b
+
+    def squared(self, a):
+        return a ** 2
+    
