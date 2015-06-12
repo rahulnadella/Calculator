@@ -1,4 +1,4 @@
-# Calculator [![MIT License][license-image]][license-url]
+# Calculator [![MIT License][license-image]][license-url] [![Build Status](https://travis-ci.org/rahulnadella/Calculator.svg?branch=master)](https://travis-ci.org/rahulnadella/Calculator)
 
 A simple implementation of the calculator (mainly used to start learning python). The Calculator class contains the following methods -> *add, subtract, multiply, divide, modulus, squared, cubed, power, sqrt, root, and abs*.
 
