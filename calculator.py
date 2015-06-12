@@ -29,3 +29,9 @@ class Calculator(object):
 
     def root(self, a, b):
         return (a**(1/b))
+
+    def abs(self, a):
+        if a <= 0:
+            return -a
+        else:
+            return a

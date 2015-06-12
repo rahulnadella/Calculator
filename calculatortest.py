@@ -129,5 +129,13 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(3, self.calculator.root(81, 4))
         self.assertEqual(3, self.calculator.root(243, 5))
 
+    def test_abs_identity(self):
+        self.assertEqual(1, self.calculator.abs(1))
+        self.assertEqual(1.345, self.calculator.abs(1.345))
+        self.assertEqual(1234, self.calculator.abs(1234))
+        self.assertEqual(2, self.calculator.abs(-2))
+        self.assertEqual(3.45, self.calculator.abs(-3.45))
+
+
 if __name__ == '__main__':
     unittest.main()
