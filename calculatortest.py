@@ -120,5 +120,14 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(3.061616997868383e-16+5j, self.calculator.sqrt(-25))
         self.assertEqual(6.123233995736766e-16+10j, self.calculator.sqrt(-100))
 
+    def test_root_identity(self):
+        self.assertEqual(1, self.calculator.root(1, 1))
+        self.assertEqual(2, self.calculator.root(4, 2))
+        self.assertEqual(2, self.calculator.root(8, 3))
+        self.assertEqual(3, self.calculator.root(9, 2))
+        self.assertEqual(3, self.calculator.root(27, 3))
+        self.assertEqual(3, self.calculator.root(81, 4))
+        self.assertEqual(3, self.calculator.root(243, 5))
+
 if __name__ == '__main__':
     unittest.main()

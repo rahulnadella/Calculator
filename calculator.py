@@ -26,3 +26,6 @@ class Calculator(object):
 
     def sqrt(self, a):
         return (a**0.5)
+
+    def root(self, a, b):
+        return (a**(1/b))
