@@ -7,7 +7,7 @@ A simple implementation of a calculator containing several operators
 Usage::
 
      import calculator
-     
+
      calculator.add(10, 3) -> 13
      calculator.subtract(10, 3) -> 7
      calculator.multiply(10, 3) -> 30
@@ -32,7 +32,7 @@ setup(
     name='Calculator',
     version='1.0.0',
     url='http://github.com/rahulnadella/calculator',
-    license='MIT',
+    license='BSD',
     author='Rahul Nadella',
     author_email='rahulnadella@yahoo.com',
     description='A simple implementation of calculator',
